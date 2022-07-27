@@ -1,0 +1,104 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.animate-dropdown {
+  animation: dropdown 1s 1;
+}
+
+@keyframes dropdown {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0); 
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+.navMenuResponsiveOpen {
+  animation: navmenuopen 1s forwards 1;
+  -webkit-animation: navmenuopen 0.5s forwards 1;
+}
+@keyframes navmenuopen {
+  10% {
+    left: -100%;
+  }
+  
+  100% {
+    left: 0%;
+  }
+}
+.navMenuResponsiveClose {
+  animation: navmenuclose 1s forwards 1;
+  -webkit-animation: navmenuclose 0.5s forwards 1;
+}
+@keyframes navmenuclose {
+  10% {
+    left: 0%;
+  }
+  
+  100% {
+    left: -100%;
+    display: none;
+  }
+}
+/* .slide {
+  position: absolute;
+  top: 0;
+  left: -400px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 20;
+  padding-top: 8rem;
+  
+
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 1s;
+  animation: slide 0.5s forwards;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes slide {
+  100% { left: 0; }
+}
+
+@keyframes slide {
+  100% { left: 0; }
+} */
